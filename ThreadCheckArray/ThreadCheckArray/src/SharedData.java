@@ -1,28 +1,22 @@
 import java.util.ArrayList;
 
 /**
- * The {@code SharedData} class represents shared data in a multi-threaded environment.
- * It encapsulates an array list, a boolean array, a flag, and a constant integer.
+ *  @code SharedData 
+ * Sapir Isaac, Vlad Tritner
  */
 public class SharedData {
 
-    /** The array list for storing integers. */
+    
     private ArrayList<Integer> array;
-
-    /** The boolean array used for a specific purpose. */
     private boolean[] winArray;
-
-    /** The flag indicating a specific state. */
     private boolean flag;
-
-    /** The constant integer value. */
     private final int b;
 
     /**
      * Constructs a new {@code SharedData} instance with the specified array and constant integer.
      *
-     * @param array The array list to be used.
-     * @param b     The constant integer value.
+     * @param list holds the
+     * @param b The constant integer value.
      */
     public SharedData(ArrayList<Integer> array, int b) {
         this.array = array;
@@ -30,8 +24,6 @@ public class SharedData {
     }
 
     /**
-     * Gets the boolean array used for a specific purpose.
-     *
      * @return The boolean array.
      */
     public boolean[] getWinArray() {
@@ -39,9 +31,9 @@ public class SharedData {
     }
 
     /**
-     * Sets the boolean array with the specified array.
+     * Sets the boolean array.
      *
-     * @param winArray The boolean array to be set.
+     * @param winArray
      */
     public void setWinArray(boolean[] winArray) {
         this.winArray = winArray;
@@ -49,7 +41,6 @@ public class SharedData {
 
     /**
      * Gets the array list containing integers.
-     *
      * @return The array list.
      */
     public ArrayList<Integer> getArray() {
@@ -57,8 +48,7 @@ public class SharedData {
     }
 
     /**
-     * Gets the constant integer value.
-     *
+     * Gets constant integer value.
      * @return The constant integer.
      */
     public int getB() {
@@ -66,8 +56,7 @@ public class SharedData {
     }
 
     /**
-     * Gets the current value of the flag.
-     *
+     * Gets  current value of the flag.
      * @return The flag value.
      */
     public boolean getFlag() {
@@ -75,9 +64,8 @@ public class SharedData {
     }
 
     /**
-     * Sets the flag with the specified value.
-     *
-     * @param flag The flag value to be set.
+     * Sets the flag with value.
+     * @param flag .
      */
     public void setFlag(boolean flag) {
         this.flag = flag;
